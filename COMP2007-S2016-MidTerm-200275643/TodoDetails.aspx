@@ -14,12 +14,13 @@
                     <asp:TextBox runat="server" CssClass="form-control" ID="TodoNotesTextBox" placeholder="Todo Notes" required="true"></asp:TextBox>
                 </div>
                 <div class="form-group">
+                    <asp:CheckBox runat="server"  ID="CompletedCheckBox" required="true"></asp:CheckBox>      
                     <label class="control-label" for="CompletedCheckBox">Completed</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="CompletedCheckBox" placeholder="Completed" required="true"></asp:TextBox>
                 </div>
                 <div class="text-right">
-                    <asp:Button Text="Cancel" ID ="CancelButton" CssClass="btn btn-warning btn-lg" UseSubmitBehavior="false" CausesValidation="false" runat="server"  OnClick="CancelButton_Click"/>
-                    <asp:Button Text="Save" ID ="SaveButton" CssClass="btn btn-primary btn-lg"  runat="server"  OnClick="SaveButton_Click" />
+                    <asp:Button Text="Cancel" ID="CancelButton" CssClass="btn btn-warning btn-lg" runat="server" 
+                        UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click" />
+                    <asp:Button Text="Save" ID="SaveButton" CssClass="btn btn-primary btn-lg" runat="server" OnClick="SaveButton_Click" />
                 </div>
             </div>
         </div>
