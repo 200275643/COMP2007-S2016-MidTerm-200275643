@@ -30,6 +30,7 @@
                         <asp:BoundField DataField="TodoID" HeaderText="Todo ID" Visible="true" />
                         <asp:BoundField DataField="TodoName" HeaderText="Todo Name" Visible="true" />
                         <asp:BoundField DataField="TodoNotes" HeaderText="Todo Notes" Visible="true" />
+                        <asp:BoundField DataField="Completed" HeaderText="Completed" Visible="true" />
                         <%--asp:BoundField DataField="Completed" HeaderText="Completed Completed" Visible="true" />  --%>
 
                         <%-- Buttons --%>
@@ -39,7 +40,6 @@
                         <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete"
                             ShowDeleteButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
                     </Columns>
-
                 </asp:GridView>
             </div>
         </div>
